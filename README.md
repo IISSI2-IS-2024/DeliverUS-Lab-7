@@ -205,14 +205,12 @@ Backend provides a POST endpoint to create a restaurant. Notice that handling of
 
 1.  Add new endpoint
     In order to create a restaurant, we have to perform a POST request to `/restaurants`. `ApiRequestHelper` includes a `post` function that help us with this, we just need to provide the route and the data to be posted. To this end, include the following at the `RestaurantEndpoints.js` file:
-
-        ```Javascript
+       ```Javascript
         function create (data) {
           return post('restaurants', data)
         }
-        ```
-
-        Remember to import the `post` function from `ApiRequestHelper` and export the create function as well.
+       ```
+      Remember to import the `post` function from `ApiRequestHelper` and export the create function as well.
 
 1.  Implement `createRestaurant` function at `CreateRestaurantScreen.js` file.
     In the previous exercise we just printed the values in the console. Now we need to make the API POST request. To this end keep in mind that:
